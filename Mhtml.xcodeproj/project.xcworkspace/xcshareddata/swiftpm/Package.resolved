@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mimeparser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MarsupialFan/MimeParser.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e82be9228ddb94ae8623db14a12c66b2382dfd66"
+      }
+    }
+  ],
+  "version" : 2
+}
