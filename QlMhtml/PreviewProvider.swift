@@ -51,9 +51,7 @@ class MhtmlPreviewProvider: QLPreviewProvider, QLPreviewingController {
         let reply = QLPreviewReply.init(dataOfContentType: contentType, contentSize: CGSize.init(width: 800, height: 800)) { (htmlReply : QLPreviewReply) in
             htmlReply.stringEncoding = .utf8
 
-            guard let mimeParser = MimeParser(for: request.fileURL) else {
-                return Data(self.htmlWrap(errorMessage: "\(#function): Failed to instantiate MimeParser").utf8)
-            }
+            let mimeParser = try MimeParser.mimeParserForFile(request.fileURL)
 
             do {
                 let mimeArchive = try mimeParser.parse()
