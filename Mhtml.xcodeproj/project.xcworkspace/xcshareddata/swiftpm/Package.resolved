@@ -1,4 +1,5 @@
 {
+  "originHash" : "966b08f37cad5011fa03450100f9b0175f9d91d29d3e242846eb146f4722193c",
   "pins" : [
     {
       "identity" : "mimeparser",
@@ -6,9 +7,9 @@
       "location" : "https://github.com/MarsupialFan/MimeParser.git",
       "state" : {
         "branch" : "main",
-        "revision" : "e82be9228ddb94ae8623db14a12c66b2382dfd66"
+        "revision" : "fbdc1998ec19286d8759abb675a4f0620ea2009f"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
